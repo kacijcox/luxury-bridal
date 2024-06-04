@@ -1,17 +1,15 @@
-import { Link } from "react-router-dom";
 import Contact from "../components/Contact";
-import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
 function ContactPage() {
-    return (
-        <div>
-            <Header />
-            <Contact />
-            <Footer />       
-        </div>
-        
-    );
+  return (
+    <div>
+      <Navbar />
+      <Contact />
+      <Footer />
+    </div>
+  );
 }
 
 export default ContactPage;

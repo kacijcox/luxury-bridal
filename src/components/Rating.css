@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+.rating-body {
+  text-align: center;
+  font-size: 45px;
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  font-optical-sizing: auto;
+  font-weight: 100px;
+  font-style: normal;
+}
+.stars {
+  color: pink; 
+  font-size: 45px; 
+  margin: 0 2px;
+}
+
+.bottom-rating {
+  font-size: 25px;
+  font-style: italic;
+  text-align: center;
+}

@@ -1,16 +1,23 @@
-import { Link } from "react-router-dom";
-import Header from "../components/Header";
 import Footer from "../components/Footer";
-
+import { Helmet } from "react-helmet";
+import Navbar from "../components/Navbar";
+import Services from "../components/Services";
+import "./ServicesPage.css";
 
 function ServicesPage() {
-    return (
-        <div>
-            <Header />
-            <Footer />
-        </div>
-        
-    );
+  return (
+    <div>
+      {" "}
+      <Helmet>
+        <title>The Luxury Bridal | Services</title>
+      </Helmet>
+      <div className="services-container">
+        <Navbar />
+        <Services />
+        <Footer />
+      </div>
+    </div>
+  );
 }
 
 export default ServicesPage;

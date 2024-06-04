@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+.card {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.card-body {
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-optical-sizing: auto;
+    font-weight: 100px;
+    font-style: normal;
+    text-align: center;
+    
+}

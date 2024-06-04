@@ -1,12 +1,7 @@
-import { Link } from "react-router-dom";
+import React from "react";
 
 function Details() {
-    return (
-        <div>
-            
-        </div>
-        
-    );
+  return <div>details</div>;
 }
 
 export default Details;
