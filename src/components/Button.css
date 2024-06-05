@@ -29,3 +29,9 @@
 .book-now-btn:hover {
   background-color: pink;
 }
+
+
+.book-now-btn:hover, .book-now-btn.active {
+  color: white; /* Change color when hovered over or clicked */
+  text-decoration: none; /* Remove underline when hovered over or clicked */
+}

@@ -1,7 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap");
 
-.mb-0 {
+
+.footer-text {
   font-family: "Sedan", serif;
   font-weight: 400;
   font-style: normal;
 }
+
+.logo {
+  margin: 10px;
+  color: white;
+  border: 2px solid white;
+  padding: 2px 5px; /* Add padding for better appearance */
+  display: inline-block; 
+  text-decoration: none; /* Remove default underline */
+}
+
+.logo:hover, .logo:active {
+  color: pink; /* Change color when hovered over or clicked */
+  text-decoration: none; /* Remove underline when hovered over or clicked */
+}
+

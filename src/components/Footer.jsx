@@ -9,10 +9,11 @@ const Footer = () => {
         <div className="row"></div>
         <div className="row mt-1">
           <div className="col-12 text-center">
-            <p className="mb-0">
+            <p className="footer-text">
               &copy; 2024 The Luxury Bridal. All Rights Reserved.
             </p>
-          </div>
+            <a className="logo" href="https://kacicox.com" target="_blank" rel="noopener noreferrer">d&d by kaci</a>
+            </div>
         </div>
       </div>
     </footer>
