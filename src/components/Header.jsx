@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Header.css";
-import pic4 from "/workspaces/luxury-bridal/src/pictures/pic4.jpeg";
+import pic4 from "../pictures/pic4.jpeg";
 
 const Header = () => {
   return (
