@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import ContactPage from "./pages/ContactPage";
 import GalleryPage from "./pages/GalleryPage";
 import ServicesPage from "./pages/ServicesPage";
-import "./GlobalStyles.css";
+import "./pages/GlobalStyles.css";
 
 function App() {
   return (

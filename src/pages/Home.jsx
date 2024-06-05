@@ -6,7 +6,7 @@ import Banner from "../components/Banner";
 import Button from "../components/Button";
 import { Helmet } from "react-helmet";
 import "./Home.css";
-import "/workspaces/luxury-bridal/src/GlobalStyles.css";
+import "../pages/GlobalStyles.css";
 
 function Home() {
   return (
