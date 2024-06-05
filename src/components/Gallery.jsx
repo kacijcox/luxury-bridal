@@ -2,9 +2,9 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import "./Gallery.css";
-import pic1 from "/workspaces/luxury-bridal/src/pictures/pic1.jpg";
-import pic2 from "/workspaces/luxury-bridal/src/pictures/pic2.jpeg";
-import pic3 from "/workspaces/luxury-bridal/src/pictures/pic3.jpeg";
+import pic1 from "../pictures/pic1.jpg";
+import pic2 from "../pictures/pic2.jpeg";
+import pic3 from "../pictures/pic3.jpeg";
 
 function Gallery() {
   return (
