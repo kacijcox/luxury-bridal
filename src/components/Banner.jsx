@@ -1,5 +1,5 @@
 import React from "react";
-import pic6 from "../src/pictures/pic6.jpg";
+import pic6 from "./pic6.jpg";
 import "./Banner.css";
 
 function Banner() {
