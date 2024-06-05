@@ -1,11 +1,11 @@
 .banner {
-    padding-top: 75px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: auto;
-    height: auto;
-    max-height: 800px;
-    max-width: 1900px;
-    padding-bottom: 15px;
+  padding-top: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  max-height: 800px;
+  max-width: 1900px;
+  padding-bottom: 15px;
 }

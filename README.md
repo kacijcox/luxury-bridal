@@ -1,1 +1,1 @@
-Luxury bridal make-up website
+Luxury bridal make-up website showcasing React, CSS

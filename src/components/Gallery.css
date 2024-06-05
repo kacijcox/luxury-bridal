@@ -35,18 +35,17 @@
 
 .carousel-caption-top {
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
-  width: auto;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 500px;
   padding: 1rem;
   background: rgba(0, 0, 0, 0.5);
   color: white;
   text-align: center;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-radius: 10px;
   box-sizing: border-box;
-  display: inline-block;
 }
 
 .carousel-caption-top-content {
@@ -60,4 +59,10 @@
 
 .carousel-indicators .active {
   background-color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .carousel-caption-top {
+    font-size: 14px;
+  }
 }

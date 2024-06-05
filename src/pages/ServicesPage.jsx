@@ -2,6 +2,7 @@ import Footer from "../components/Footer";
 import { Helmet } from "react-helmet";
 import Navbar from "../components/Navbar";
 import Services from "../components/Services";
+import ServicesBanner from "../components/ServicesBanner";
 import "./ServicesPage.css";
 
 function ServicesPage() {
@@ -13,6 +14,7 @@ function ServicesPage() {
       </Helmet>
       <div className="services-container">
         <Navbar />
+        <ServicesBanner />
         <Services />
         <Footer />
       </div>

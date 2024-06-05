@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&display=swap");
+
+.services-banner {
+  background-color: hsl(351, 100%, 97%);
+  color: black;
+  padding: 20px;
+  text-align: center;
+  font-family: "Aref Ruqaa Ink", sans-serif;
+  font-weight: 900;
+  font-style: bold;
+  font-size: 50px;
+  letter-spacing: 5px;
+}

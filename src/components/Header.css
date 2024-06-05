@@ -1,18 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 .header-text {
-  padding-top: 23px;
-  padding-left: 12px;
+  padding-top: 30px;
+  padding-left: 10px;
   font-family: "Raleway", sans-serif;
-  font-size: 40px;
-  font-optical-sizing: auto;
-  font-weight: 100px;
-  font-style: normal;
+  font-size: 30px;
 }
 
 .center-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .header-text {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .center-container {
+    flex-direction: column;
+  }
 }

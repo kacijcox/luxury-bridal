@@ -6,11 +6,10 @@
 }
 
 .card-body {
-    font-family: "Raleway", sans-serif;
-    font-size: 20px;
-    font-optical-sizing: auto;
-    font-weight: 100px;
-    font-style: normal;
-    text-align: center;
-    
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-optical-sizing: auto;
+  font-weight: 100px;
+  font-style: normal;
+  text-align: center;
 }

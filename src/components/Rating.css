@@ -2,16 +2,13 @@
 
 .rating-body {
   text-align: center;
-  font-size: 45px;
   font-family: "Raleway", sans-serif;
-  font-size: 40px;
-  font-optical-sizing: auto;
-  font-weight: 100px;
-  font-style: normal;
+  font-size: 30px;
 }
+
 .stars {
-  color: pink; 
-  font-size: 45px; 
+  color: pink;
+  font-size: 30px;
   margin: 0 2px;
 }
 
@@ -19,4 +16,21 @@
   font-size: 25px;
   font-style: italic;
   text-align: center;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  .rating-body {
+    font-size: 24px; /* Further reduce font size for smaller screens if necessary */
+  }
+
+  .stars {
+    font-size: 24px; /* Further reduce font size for smaller screens if necessary */
+  }
+
+  .bottom-rating {
+    font-size: 16px; /* Further reduce font size for smaller screens if necessary */
+  }
 }

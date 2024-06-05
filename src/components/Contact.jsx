@@ -1,112 +1,57 @@
-import React, { useState } from 'react';
-import './Contact.css';
+import React from "react";
+import "./Contact.css";
+import { useForm, ValidationError } from "@formspree/react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    contactFirstName: '',
-    contactLastName: '',
-    contactEmail: '',
-    contactDateOfWedding: '',
-    contactServices: '',
-  });
+  const [state, handleSubmit] = useForm("mgegjpnw");
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    // Send form data to Formspree
-    fetch('https://formspree.io/f/YOUR_FORM_ID', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(formData),
-    })
-      .then((response) => {
-        if (response.ok) {
-          alert('Your message has been sent!');
-        } else {
-          alert('There was an error sending your message.');
-        }
-      })
-      .catch((error) => {
-        alert('There was an error sending your message.');
-      });
-  };
+  if (state.succeeded) {
+    return (
+      <p className="return-message">Thanks! We will contact you back soon!</p>
+    );
+  }
 
   return (
-    <div className="contact-container mt-5">
-      <h2>Contact Us</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="contact-form-group">
-          <label htmlFor="contactFirstName">First Name</label>
-          <input
-            type="text"
-            className="contact-form-control"
-            id="contactFirstName"
-            name="contactFirstName"
-            value={formData.contactFirstName}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <div className="contact-form-group">
-          <label htmlFor="contactLastName">Last Name</label>
-          <input
-            type="text"
-            className="contact-form-control"
-            id="contactLastName"
-            name="contactLastName"
-            value={formData.contactLastName}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <div className="contact-form-group">
-          <label htmlFor="contactEmail">Email address</label>
-          <input
-            type="email"
-            className="contact-form-control"
-            id="contactEmail"
-            name="contactEmail"
-            value={formData.contactEmail}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <div className="contact-form-group">
-          <label htmlFor="contactDateOfWedding">Date of Wedding</label>
-          <input
-            type="date"
-            className="contact-form-control"
-            id="contactDateOfWedding"
-            name="contactDateOfWedding"
-            value={formData.contactDateOfWedding}
-            onChange={handleChange}
-          />
-        </div>
-        <div className="contact-form-group">
-          <label htmlFor="contactServices">Services</label>
-          <textarea
-            className="contact-form-control"
-            id="contactServices"
-            name="contactServices"
-            rows="3"
-            value={formData.contactServices}
-            onChange={handleChange}
-          ></textarea>
-        </div>
-        <button type="submit" className="btn btn-primary">
-          Submit
-        </button>
-      </form>
+    <div className="form-container">
+      <div className="question">
+        Have a question? Send us a message at{" "}
+        <a href="mailto:contact@theluxurybridal.com" className="email-link">
+          <b>
+            <i>contact@theluxurybridal.com</i>
+          </b>
+        </a>
+        <hr />
+        <form onSubmit={handleSubmit}>
+          <label htmlFor="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstName" />
+
+          <label htmlFor="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName" />
+
+          <label htmlFor="phoneNumber">Phone Number</label>
+          <input type="tel" id="phoneNumber" name="phoneNumber" />
+
+          <label htmlFor="email">Email Address</label>
+          <input id="email" type="email" name="email" />
+          <ValidationError prefix="Email" field="email" errors={state.errors} />
+
+          <label htmlFor="weddingDate">Wedding Date</label>
+          <input id="weddingDate" type="date" name="weddingDate" />
+
+          <label htmlFor="services">Services</label>
+          <textarea id="services" name="services"></textarea>
+
+          <button type="submit" disabled={state.submitting}>
+            {state.submitting ? (
+              <FontAwesomeIcon icon={faSpinner} spin />
+            ) : (
+              "Submit"
+            )}
+          </button>
+        </form>
+      </div>
     </div>
   );
 };
