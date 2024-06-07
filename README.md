@@ -1,1 +1,1 @@
-Luxury bridal make-up website showcasing React, CSS
+Luxury bridal make-up website built with React, CSS, and Bootstrap

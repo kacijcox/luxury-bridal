@@ -28,7 +28,7 @@ const Services = () => {
         <div className="col-md-6 mb-4">
           <div className="card shadow-sm">
             <div className="card-body-services">
-              <h5 className="card-title">Bridal Makeup Artist Services $130</h5>
+              <h5 className="card-title">Bridal Makeup Artist Services $120</h5>
               <p className="card-text">
                 Elevate your natural beauty with our professional makeup artist
                 services. Our talented team is skilled in creating a diverse
@@ -85,29 +85,6 @@ const Services = () => {
                 will make you the star of the event. With our expertise, you can
                 relax and enjoy the occasion while exuding confidence and
                 glamour.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-6 mb-4 mx-auto">
-          <div className="card shadow-sm">
-            <div className="card-body-services">
-              <h5 className="card-title">
-                Photo Shoot/Video Services Hair & Makeup $200
-              </h5>
-              <p className="card-text">
-                Capture your best look on camera with our expert on-site hair
-                and makeup services for photo shoots. Whether it’s for a
-                professional headshot, a family portrait, a fashion editorial,
-                or any other type of photo session, our team will ensure you
-                look picture-perfect.
-              </p>
-              <p className="card-text">
-                We understand the importance of flawless hair and makeup under
-                the camera’s lens. Our goal is to make you feel confident and
-                look your best, ensuring that your photos reflect your unique
-                style and personality. Let us help you create stunning images
-                that you’ll cherish for a lifetime.
               </p>
             </div>
           </div>

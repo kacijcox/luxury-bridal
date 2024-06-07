@@ -11,13 +11,12 @@
   margin: 10px;
   color: white;
   border: 2px solid white;
-  padding: 2px 5px; /* Add padding for better appearance */
+  padding: 2px 5px; 
   display: inline-block; 
-  text-decoration: none; /* Remove default underline */
+  text-decoration: none; 
 }
 
 .logo:hover, .logo:active {
-  color: pink; /* Change color when hovered over or clicked */
-  text-decoration: none; /* Remove underline when hovered over or clicked */
+  color: pink; 
+  text-decoration: none; 
 }
-

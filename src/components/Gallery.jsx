@@ -5,6 +5,7 @@ import "./Gallery.css";
 import pic1 from "../pictures/pic1.jpg";
 import pic2 from "../pictures/pic2.jpeg";
 import pic3 from "../pictures/pic3.jpeg";
+import pic5 from "../pictures/pic5.jpeg"; 
 
 function Gallery() {
   return (
@@ -34,46 +35,25 @@ function Gallery() {
           data-bs-slide-to="2"
           aria-label="Slide 3"
         ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="3"
+          aria-label="Slide 4" 
+        ></button>
       </div>
       <div className="carousel-inner">
         <div className="carousel-item active">
           <img src={pic1} className="d-block w-100" alt="Slide 1" />
-          <div className="carousel-caption-top d-none d-md-block">
-            <div className="carousel-caption-top-content">
-              <h5>Lead Stylist</h5>
-              <p>
-                Our lead stylist is a visionary trendsetter,
-                <br /> boasting years of experience in crafting breathtaking
-                hair and makeup looks for special events.
-              </p>
-            </div>
-          </div>
         </div>
         <div className="carousel-item">
           <img src={pic2} className="d-block w-100" alt="Slide 2" />
-          <div className="carousel-caption-top d-none d-md-block">
-            <div className="carousel-caption-top-content">
-              <h5>Makeup Artist</h5>
-              <p>
-                Our makeup artist is a dedicated and skilled professional,
-                <br /> specializing in flawless, long-lasting makeup for any
-                occasion.
-              </p>
-            </div>
-          </div>
         </div>
         <div className="carousel-item">
           <img src={pic3} className="d-block w-100" alt="Slide 3" />
-          <div className="carousel-caption-top d-none d-md-block">
-            <div className="carousel-caption-top-content">
-              <h5>Our Values</h5>
-              <p>
-                At our core, we are committed to professionalism and creativity,
-                <br /> ensuring an exceptional and stress-free experience for
-                our clients.
-              </p>
-            </div>
-          </div>
+        </div>
+        <div className="carousel-item">
+          <img src={pic5} className="d-block w-100" alt="Slide 4" /> 
         </div>
       </div>
       <button
