@@ -9,7 +9,7 @@ const Services = () => {
         <div className="col-md-6 mb-4">
           <div className="card shadow-sm">
             <div className="card-body-services">
-              <h5 className="card-title">Bridal Hair Styling Services $130</h5>
+              <h5 className="card-title">Bridal Hair Styling Services $120</h5>
               <p className="card-text">
                 Get ready to turn heads with our professional hair styling
                 services. Whether you’re looking for a sleek updo, romantic
