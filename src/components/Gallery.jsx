@@ -44,16 +44,16 @@ function Gallery() {
       </div>
       <div className="carousel-inner">
         <div className="carousel-item active">
-          <img src={pic1} className="d-block w-100" alt="Slide 1" />
+          <img src={pic1} className="d-block w-100" alt="best make up hair styling services in chicago" />
         </div>
         <div className="carousel-item">
-          <img src={pic2} className="d-block w-100" alt="Slide 2" />
+          <img src={pic2} className="d-block w-100" alt="best bridal make up services in chicago" />
         </div>
         <div className="carousel-item">
-          <img src={pic3} className="d-block w-100" alt="Slide 3" />
+          <img src={pic3} className="d-block w-100" alt="affordable rated number one bridal make up hair styling services in chicago" />
         </div>
         <div className="carousel-item">
-          <img src={pic5} className="d-block w-100" alt="Slide 4" /> 
+          <img src={pic5} className="d-block w-100" alt="rated number on make up hair styling services in chicago" /> 
         </div>
       </div>
       <button
